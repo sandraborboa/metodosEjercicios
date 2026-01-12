@@ -14,8 +14,14 @@ public class Fibonacci {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Reto 6: Serie Fibonacci");
-        System.out.print("Ingresa el número de series: ");
-        repeticion = scanner.nextInt();
+        do {
+            System.out.print("Ingresa el número de series: ");
+            repeticion = scanner.nextInt();
+
+            if (repeticion < 0) {
+                System.out.println("Número de series no válido, inténtalo de nuevo.");
+            }
+        } while (repeticion < 0);
 
 
         for (int i = 0; i < repeticion; i++) {
