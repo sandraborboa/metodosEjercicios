@@ -9,7 +9,7 @@ public class EjerciciosMetodos {
         System.out.println("Reto 2. Verificador de palíndromo 🪞");
         System.out.println("Reto 3. Adivina el número 🔢");
         System.out.println("Reto 4. Calculadora de primas de seguro 🧮");
-        System.out.println("Reto 6. Impresora de serie Fibonacci 🌿");
+        System.out.println("Reto 5. Impresora de serie Fibonacci 🌿");
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Ingresa el número de reto que deseas ejecutar: ");
@@ -32,7 +32,7 @@ public class EjerciciosMetodos {
                 CalculoPrimas calculoPrimas = new CalculoPrimas();
                 calculoPrimas.reto();
                 break;
-            case 6:
+            case 5:
                 Fibonacci fibonacci = new Fibonacci();
                 fibonacci.reto();
                 break;
@@ -58,7 +58,7 @@ public class EjerciciosMetodos {
         // CalculoPrimas calculoPrimas = new CalculoPrimas();
         // calculoPrimas.reto();
 
-        // ---- RETO 6
+        // ---- RETO 5
         // Fibonacci fibonacci = new Fibonacci();
         // fibonacci.reto();
     }

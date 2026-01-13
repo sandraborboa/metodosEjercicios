@@ -10,10 +10,19 @@ public class GanadorRandom {
     // El usuario debe ingresar el número total de participantes y el programa debe mostar por consola dicho número ganador
 
     public void reto() {
+        int max;
 
         System.out.println("Reto 1: Generador de número ganador.");
-        System.out.print("Ingresa el numero total de participantes: ");
-        int max = scanner.nextInt();
+
+        do {
+            System.out.print("Ingresa el numero total de participantes: ");
+            max = scanner.nextInt();
+
+            if (max < 1) {
+                System.out.println("El número de participantes no puede ser menor a uno");
+            }
+        } while (max < 1);
+
         scanner.close();
 
         int ganador = random.nextInt(1, max + 1); // El segundo parametro es exclusivo, por eso +1
