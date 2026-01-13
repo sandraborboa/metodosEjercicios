@@ -25,11 +25,11 @@ public class Fibonacci {
 
 
         for (int i = 0; i < repeticion; i++) {
-            System.out.println(num1);
+            System.out.println(num1); // imprime el primer número de la serie
 
-            suma = num1 + num2;
-            num1 = num2;
-            num2 = suma;
+            suma = num1 + num2; // calcula el siguiente número y lo guarda en la variable suma
+            num1 = num2; // recorre el primer número
+            num2 = suma; // recorre el segundo número (usando el valor de suma)
         }
 
     }
