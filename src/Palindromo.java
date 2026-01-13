@@ -17,7 +17,7 @@ public class Palindromo {
 
         String textoInvertido = new StringBuilder(textoLimpio).reverse().toString(); // Se invierte la palabra usando la clase StringBuilder con su metodo reverse y lo convierte de nuevo a string
 
-        if(textoLimpio.equalsIgnoreCase(textoInvertido)) {
+        if(textoLimpio.equals(textoInvertido)) {
             System.out.println("Tu palabra es un palíndromo.");
         } else {
             System.out.println("Tu palabra no es un palíndromo.");
